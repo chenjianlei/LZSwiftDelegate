@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LZSwiftDelegate_Example' do
+  pod 'LZSwiftDelegate', :path => '../'
+
+  target 'LZSwiftDelegate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
