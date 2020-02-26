@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A0C1C65E92B8FC02048580FA /* Pods_LZSwiftDelegate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFE21A0368F628539F3D22B /* Pods_LZSwiftDelegate_Example.framework */; };
+		A5EA7E732406B1CC00FB4D5A /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA7E722406B1CC00FB4D5A /* TwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +30,9 @@
 
 /* Begin PBXFileReference section */
 		0E56A1D307EA60E0B067B307 /* Pods-LZSwiftDelegate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftDelegate_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftDelegate_Tests/Pods-LZSwiftDelegate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1459B45FAEA01FBB9EEA52C6 /* LZSwiftDelegate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZSwiftDelegate.podspec; path = ../LZSwiftDelegate.podspec; sourceTree = "<group>"; };
+		1459B45FAEA01FBB9EEA52C6 /* LZSwiftDelegate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZSwiftDelegate.podspec; path = ../LZSwiftDelegate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2FD754D3CB2AEDFE44587B58 /* Pods-LZSwiftDelegate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftDelegate_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftDelegate_Example/Pods-LZSwiftDelegate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4668124EB59D236B0265ED3E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4668124EB59D236B0265ED3E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LZSwiftDelegate_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZSwiftDelegate_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +45,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		862592DCB893C5DC93653ABD /* Pods_LZSwiftDelegate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftDelegate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58D3A4E3D7CD9420A93791A /* Pods-LZSwiftDelegate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftDelegate_Example.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftDelegate_Example/Pods-LZSwiftDelegate_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A5EA7E722406B1CC00FB4D5A /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		E10CE17D61B33962EC1B9550 /* Pods-LZSwiftDelegate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftDelegate_Tests.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftDelegate_Tests/Pods-LZSwiftDelegate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EEFE21A0368F628539F3D22B /* Pods_LZSwiftDelegate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftDelegate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F91BCC49B1FB29D25D7CE045 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F91BCC49B1FB29D25D7CE045 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A5EA7E722406B1CC00FB4D5A /* TwoViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +159,6 @@
 				0E56A1D307EA60E0B067B307 /* Pods-LZSwiftDelegate_Tests.debug.xcconfig */,
 				E10CE17D61B33962EC1B9550 /* Pods-LZSwiftDelegate_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -333,6 +336,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A5EA7E732406B1CC00FB4D5A /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

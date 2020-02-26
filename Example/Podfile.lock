@@ -1,0 +1,16 @@
+PODS:
+  - LZSwiftDelegate (0.0.1)
+
+DEPENDENCIES:
+  - LZSwiftDelegate (from `../`)
+
+EXTERNAL SOURCES:
+  LZSwiftDelegate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LZSwiftDelegate: f3a3d945542647c97c2ff404a45614ca490224d5
+
+PODFILE CHECKSUM: 4a7868322bdef3a7d56158caae32e424bfc202d6
+
+COCOAPODS: 1.8.4

@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import LZSwiftDelegate
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, LZSwiftDelegate {
+  
+    var delegate: LZSwiftDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +22,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let vc = TwoViewController()
+        vc.delegate = self
+        present(vc, animated: true, completion: nil)
+    }
+    
+    func onAction(_ event: LZSwiftEvent) {
+        if event.name == "a" {
+            print("a")
+        } else if event.name == "b" {
+            print("b")
+        } else if event.name == "c" {
+            print("c")
+        } else {
+            self.delegate?.onAction(event)
+        }
+    }
 }
 
