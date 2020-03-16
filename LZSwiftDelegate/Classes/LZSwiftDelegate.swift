@@ -7,17 +7,28 @@
 
 import Foundation
 
-public protocol LZSwiftDelegate {
-
-    func onAction(_ event: LZSwiftEvent)
+public class LZSwiftDelegate<Input, Output> {
+    
+    public init() {}
+    
+    private var block: ((Input) -> Output?)?
+    
+    public func delegate<T: AnyObject>(on target: T, block: ((T, Input) -> Output)?) {
+        self.block = { [weak target] input in
+            guard let target = target else {
+                return nil
+            }
+            return block?(target, input)
+        }
+    }
+    
+    public func call(_ input: Input) -> Output? {
+        return block?(input)
+    }
 }
 
-public struct LZSwiftEvent {
-    public var params: Any?
-    public var name: String!
-
-    public init(_ name: String, params: Any?) {
-        self.name = name
-        self.params = params
+extension LZSwiftDelegate where Input == Void {
+    public func call() -> Output? {
+        return call(())
     }
 }

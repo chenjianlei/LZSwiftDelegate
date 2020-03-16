@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LZSwiftDelegate'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'LZSwiftDelegate.'
   
   s.description      = <<-DESC

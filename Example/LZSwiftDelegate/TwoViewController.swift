@@ -11,7 +11,9 @@ import LZSwiftDelegate
 
 class TwoViewController: UIViewController {
 
-    var delegate: LZSwiftDelegate?
+//    var delegate: LZSwiftDelegate?
+    
+    var newDelegate = LZSwiftDelegate<Int, Bool>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +22,21 @@ class TwoViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let event = LZSwiftEvent.init("b", params: ["name": "XXX"])
-        self.delegate?.onAction(event)
+        let vc = TestNextViewController()
+//        vc.newDelegate.delegate(on: self) { [weak self] (_, a) -> Bool in
+//            print(a)
+//            _ = self?.newDelegate.call(a)
+//            return false
+//        }
+        
+        vc.newDelegate.delegate(on: self) { [weak self] (_, p) in
+            print(p)
+            _ = self?.newDelegate.call(888)
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
     
+    deinit {
+        print(#function)
+    }
 }
